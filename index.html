@@ -1,0 +1,50 @@
+<html>
+    <head>
+       <title>App Minha selfie</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- Links bootstrap -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <!-- Link css -->
+       <link href="style.css" rel="stylesheet">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="mySelfie.png"></a>
+        <h1>App de Colagem </h1>
+        <hr>
+        <h4 style="color:red;">Pressione permitir assim que o pop-up for exibido. Depois de dar um comando de voz</h4>
+        
+        <div class="form-group">
+            <h3>Diga "selfie"</h3>
+
+        </div>
+        <button class="btn btn-primary" onclick="start()">Iniciar</button>
+        <p>Pressione o botão Iniciar</p>
+
+        <label>Sua webcam : </label>
+        <div id="camera"></div>
+
+        <br>
+
+        <label>Sua selfie vai aparecer aqui: </label>
+        <div id="resultRow">
+            <div id="result1" class="column">
+                <img src="camera_retro_vintage_173449_1920x1080.jpg">
+            </div><div id="result1" class="column">
+                <img src="maquina-fotografica-antiga-face.jpg">
+            </div>
+            <div id="result1" class="column">
+                <img src="As-Melhores-Máquinas-Fotográficas-Reflex.jpg">
+            </div>
+        </div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
